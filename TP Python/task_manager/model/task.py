@@ -1,0 +1,10 @@
+class Task(db.Model):
+	id = db.Column(db.Integer, primary_key = true)
+	title = db.Column(db.Unicode)
+	description = db.Column(db.Unicode)
+	expiration_date = db.Column(db.DateTime)
+	priority = db.Column(db.Integer)
+	category = db.Column(db.Integer)
+	state = db.Column(db.Integer)
+	comment = db.Column(db.Unicode)	
+	creation_date = db.Column(db.DateTime)
